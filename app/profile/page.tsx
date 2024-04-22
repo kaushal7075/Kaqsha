@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 
 const ProfileSelector = () => {
   const [profileType, setProfileType] = useState("");
 
-  const handleProfileChange = (type) => {
+  const handleProfileChange = (type: SetStateAction<string>) => {
     setProfileType(type);
   };
 
