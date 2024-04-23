@@ -5,7 +5,7 @@ import { SetStateAction, useState } from "react";
 const ProfileSelector = () => {
   const [profileType, setProfileType] = useState("");
 
-  const handleProfileChange = (type: SetStateAction<string>) => {
+  const handleProfileChange = (type: any) => {
     setProfileType(type);
   };
 
