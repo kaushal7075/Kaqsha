@@ -40,11 +40,11 @@ export const KaqshaWelcomeEmail = ({
           you come together to find academic opportunities,connect around shared
           interests,and work on projects togethe
         </Text>
-        <Section style={btnContainer}>
-          <Button style={button} href="http://localhost:3000/Parentregister">
-            Get started
-          </Button>
-        </Section>
+        {/* <Section style={btnContainer}>
+          {/* <Button style={button} href="http://localhost:3000/Parentregister"> */}
+        {/* Get started */}
+        {/* </Button>
+        </Section> */}
         <Text style={paragraph}>
           Best,
           <br />
