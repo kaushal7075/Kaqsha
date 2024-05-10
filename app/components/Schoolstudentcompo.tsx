@@ -18,23 +18,52 @@ const Schoolstudent = () => {
           className="animate-in flex-1 flex flex-col w-full justify-center gap-2 text-foreground mb-4"
           //  action={}
         >
-          <label className="text-md" htmlFor="name">
-            Name
+          <label className="text-md" htmlFor="fname">
+            first name
           </label>
           <input
             className="rounded-md px-4 py-2 bg-inherit border mb-6"
             name="name"
-            placeholder="John doe"
+            placeholder="John"
             required
           />
-          <label className="text-md" htmlFor="Class">
-            Class
+          <label className="text-md" htmlFor="lname">
+            last name
+          </label>
+          <input
+            className="rounded-md px-4 py-2 bg-inherit border mb-6"
+            name="name"
+            placeholder="doe"
+            required
+          />
+          <label className="text-md" htmlFor="Grade">
+            Grade
           </label>
           <input
             className="rounded-md px-4 py-2 bg-inherit border mb-6"
             type="text"
             name="Class"
             placeholder="Class(1-12)"
+            required
+          />
+          <label className="text-md" htmlFor="Contact">
+            Contact
+          </label>
+          <input
+            className="rounded-md px-4 py-2 bg-inherit border mb-6"
+            type="text"
+            name="Class"
+            placeholder="+91"
+            required
+          />
+          <label className="text-md" htmlFor="Contact">
+            Gender
+          </label>
+          <input
+            className="rounded-md px-4 py-2 bg-inherit border mb-6"
+            type="text"
+            name="Gender"
+            placeholder=""
             required
           />
 

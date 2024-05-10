@@ -47,6 +47,7 @@ export default async function ResetPassword({
         `/reset-password?message=Unable to reset Password. Try again!`
       );
     }
+
     redirect(
       `/login?message=Your Password has been reset successfully. Sign in.`
     );

@@ -42,6 +42,10 @@ export default async function Login({
     //   },
     // });
 
+    // const { error } = await supabase.auth.signInWithPassword({
+    //   email,
+    //   password,
+    // });
     const { error } = await supabase.auth.signInWithPassword({
       email,
       password,
