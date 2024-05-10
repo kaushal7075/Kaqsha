@@ -75,16 +75,19 @@ const ParentApprovalPage: React.FC = () => {
 
   const sendEmailToParent = async () => {
     try {
-      const response = await fetch("/api/parentemail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: parentEmail,
-          userFirstname: "", // Add the user's first name here if needed
-        }),
-      });
+      const response = await fetch(
+        "http://localhost:3000/app/api/parentemail",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: parentEmail,
+            userFirstname: "", // Add the user's first name here if needed
+          }),
+        }
+      );
 
       if (response.ok) {
         setEmailSent(true);
