@@ -72,7 +72,6 @@ const ParentApprovalPage: React.FC = () => {
       router.replace("/registration");
     }
   }, []);
-  // fetch(`${process.env.API_URL}/send`)
 
   const sendEmailToParent = async () => {
     try {

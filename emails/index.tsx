@@ -28,38 +28,37 @@ export const KaqshaWelcomeEmail = ({
       opportunities
     </Preview>
     {/* new change */}
-    <Tailwind>
-      <Body style={main}>
-        <Container style={container}>
-          <Img
-            src={`https://yt3.ggpht.com/ytc/AIf8zZSm4qVj84gHNLa0CnX6DUrOjUci_wsmo9VbAX1j=s88-c-k-c0x00ffffff-no-rj`}
-            width="50"
-            height="50"
-            alt="Koala"
-            style={logo}
-          />
-          <Text style={paragraph}>Hi {userFirstname},</Text>
-          <Text style={paragraph}>
-            Welcome to Kaqsha, the learnig A unique platform where students like
-            you come together to find academic opportunities,connect around
-            shared interests,and work on projects togethe
-          </Text>
-          <Section style={btnContainer}>
-            <Button
-              style={button}
-              href="http://localhost:3000/Parentregister"
-            ></Button>
-          </Section>
-          <Text style={paragraph}>
-            Best,
-            <br />
-            From Kaqsha
-          </Text>
-          <Hr style={hr} />
-          <Text style={footer}>408 Warren Rd - San Mateo, CA 94402</Text>
-        </Container>
-      </Body>
-    </Tailwind>
+
+    <Body style={main}>
+      <Container style={container}>
+        <Img
+          src={`https://yt3.ggpht.com/ytc/AIf8zZSm4qVj84gHNLa0CnX6DUrOjUci_wsmo9VbAX1j=s88-c-k-c0x00ffffff-no-rj`}
+          width="50"
+          height="50"
+          alt="Koala"
+          style={logo}
+        />
+        <Text style={paragraph}>Hi {userFirstname},</Text>
+        <Text style={paragraph}>
+          Welcome to Kaqsha, the learnig A unique platform where students like
+          you come together to find academic opportunities,connect around shared
+          interests,and work on projects togethe
+        </Text>
+        <Section style={btnContainer}>
+          <Button
+            style={button}
+            href="http://localhost:3000/Parentregister"
+          ></Button>
+        </Section>
+        <Text style={paragraph}>
+          Best,
+          <br />
+          From Kaqsha
+        </Text>
+        <Hr style={hr} />
+        <Text style={footer}>408 Warren Rd - San Mateo, CA 94402</Text>
+      </Container>
+    </Body>
   </Html>
 );
 
