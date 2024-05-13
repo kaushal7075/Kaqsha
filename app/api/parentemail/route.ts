@@ -30,7 +30,8 @@ export const dynamic = "force-dynamic";
 
 const RESEND_API_KEY = "re_EWgNu5B6_7BEwEd2uyFaZtjtqfgoALHfL";
 
-export async function POST() {
+export async function POST(request: Request) {
+  const { email, userFirstname } = await request.json();
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
@@ -38,10 +39,10 @@ export async function POST() {
       Authorization: `Bearer ${RESEND_API_KEY}`,
     },
     body: JSON.stringify({
-      from: "Acme <infp@kaqsha.com>",
-      to: ["kaushal.rai@evonix.co"],
-      subject: "hello world",
-      html: "<strong>it works!</strong>",
+      from: "Kaqsha <info@kaqsha.com>",
+      to: [email],
+      subject: "Parent registration",
+      html: render(WelcomeTemplate({ userFirstname })),
     }),
   });
 
@@ -49,4 +50,5 @@ export async function POST() {
     const data = await res.json();
     return NextResponse.json(data);
   }
+  return Response.json({ message: "Email sent successfully" });
 }
